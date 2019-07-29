@@ -4,7 +4,6 @@ import { CrisisCenterComponent } from './crisis-center/crisis-center.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
-  { path: 'crisis-center', component: CrisisCenterComponent },
   { 
     path: '',
     redirectTo: 'heroes',
