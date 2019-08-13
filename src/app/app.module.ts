@@ -11,6 +11,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Browser } from 'protractor';
 import { ComposeMessageComponent } from './compose-message/compose-message.component';
 
+import { AdminModule } from './admin/admin.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,9 +23,10 @@ import { ComposeMessageComponent } from './compose-message/compose-message.compo
     BrowserModule,
     HeroesModule,
     CrisisCenterModule,
-    AppRoutingModule,
     BrowserAnimationsModule,
-    FormsModule
+    FormsModule,
+    AdminModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
