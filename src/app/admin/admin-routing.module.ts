@@ -10,9 +10,14 @@ const adminRoutes: Routes = [
     path: 'admin',
     component: AdminComponent,
     children: [
-      { path: 'crises', component: ManageCrisesComponent },
-      { path: 'heroes', component: ManageHeroesComponent },
-      { path: '', component: AdminDashboardComponent }
+      {
+        path: '',
+        children: [
+          { path: 'crises', component: ManageCrisesComponent },
+          { path: 'heroes', component: ManageHeroesComponent },
+          { path: '', component: AdminDashboardComponent }
+        ]
+      }
     ]
   }
 ];
