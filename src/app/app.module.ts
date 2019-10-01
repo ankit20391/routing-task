@@ -12,14 +12,13 @@ import { Browser } from 'protractor';
 import { ComposeMessageComponent } from './compose-message/compose-message.component';
 
 import { AdminModule } from './admin/admin.module';
-import { LoginComponent } from './auth/login/login.component';
+import { AuthModule } from './auth/auth.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     PageNotFoundComponent,
-    ComposeMessageComponent,
-    LoginComponent
+    ComposeMessageComponent
   ],
   imports: [
     BrowserModule,
@@ -28,6 +27,7 @@ import { LoginComponent } from './auth/login/login.component';
     BrowserAnimationsModule,
     FormsModule,
     AdminModule,
+    AuthModule,
     AppRoutingModule
   ],
   providers: [],
